@@ -2,16 +2,14 @@
 Using Machine Learning Algorithms and Technical Analysis to improve stock trading 
 
 
-# NOTE
-Create public folder with the following path:
+# Set Up
 
-public: {
-    bars.json: []
-    bars2.json: []
-    master.json: []
-}
+To set up file directory (after clone) run the following line in the terminal:
+- npm run builder
 
-- ensure each json file is an empty array
+then to run:
+- npm run dev
+
 
 # Update notes
 
