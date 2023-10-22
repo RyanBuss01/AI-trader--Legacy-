@@ -3,6 +3,8 @@ const barMngr = require('../methods/barMngr');
 const tickerMngr = require('../methods/tickerMngr');
 const l = require('./loop')
 const prob = require('../methods/probability')
+let masterList = require('../public/master.json')
+const blacklist = require("../constants/blacklist")
 
 
 menu = {
@@ -18,7 +20,7 @@ menu = {
         }
     },
 
-    menuBarMngr: async function (tickerList) {
+    barMngr: async function (tickerList) {
         console.log("Bar Manager... \n\n1. Refresh bars \n2. Loop Menus (1 day) \n3. Ticker Manager \n") // collects tickers over a set dollar amount
 
         const act = prompt("Select action: ");
@@ -46,7 +48,7 @@ menu = {
   
         if(act!='' && tools.isString(act)) { prob.probability(act.toUpperCase()) }
         else switch (act) {
-            case "1": funcsProbability.getBestProbability(tickerList); break;
+            case "1": prob.probability(tickerList); break;
             default: {console.log("Not a valid action"); this.menuLoop(tickerList)}
         }
     },

@@ -5,6 +5,8 @@ const snp_500 = require("../constants/snp_500")
 const snp_600SC = require('../constants/snp_600SC')
 const blacklist = require("../constants/blacklist")
 const dow = require("../constants/dow")
+const fs = require('fs');
+
 
 var tickerMngr = {
     createMasterList: function() {

@@ -93,7 +93,7 @@ var barMngr = {
     getMultiBarsRefresh: async function (tickers, tickerList) {
         const bars = [];
         let list = this.convertToOneDimensional(tickers)
-        let lastDate = this.getLatestBarDate(tickerList.filter(t=> t.ticker=='AAPL')[0].bars)
+        // let lastDate = this.getLatestBarDate(tickerList.filter(t=> t.ticker=='AAPL')[0].bars)
         
         // compare latest date to current date and subtract
 
