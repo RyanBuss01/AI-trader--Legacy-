@@ -20,4 +20,5 @@ then to run:
 - set up bar manager
 - probability
 - Cosine sim alert
+- builder
 - .gitignore
