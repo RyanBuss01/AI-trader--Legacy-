@@ -5,6 +5,7 @@ const l = require('./loop')
 const prob = require('../methods/probability')
 let masterList = require('../public/master.json')
 const blacklist = require("../constants/blacklist")
+const cosineSim = require("../methods/algos/cosineSim.js")
 
 
 menu = {
@@ -15,7 +16,7 @@ menu = {
 
 
         switch (act) {
-            case "1" : cosineSime(); break;
+            case "1" : cosineSim(tickerList); break;
             default: {console.log("Not a valid action"); l.loop()}
         }
     },
