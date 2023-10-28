@@ -43,7 +43,9 @@ var blacklist = [
 'DF',
 'WETF',
 'CFX',
-'MULN'
+'MULN',
+'CLNY',
+'PDLI'
 ]
 
 module.exports=blacklist
